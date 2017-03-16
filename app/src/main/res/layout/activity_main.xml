@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.incorporation.typhoon.loginpro.MainActivity">
+
+    <Button
+        android:text="ENTRAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idPass"
+        android:layout_alignRight="@+id/idPass"
+        android:layout_alignEnd="@+id/idPass"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="entrar"
+        android:id="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginTop="60dp"
+        android:id="@+id/idNombre"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_below="@+id/idNombre"
+        android:layout_alignRight="@+id/idNombre"
+        android:layout_alignEnd="@+id/idNombre"
+        android:layout_marginTop="26dp"
+        android:id="@+id/idPass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:id="@+id/MSJ"
+        android:fontFamily="serif"
+        android:typeface="sans"
+        android:textSize="24sp"
+        android:lineSpacingExtra="10sp"
+        android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>
